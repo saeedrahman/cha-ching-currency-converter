@@ -13,6 +13,7 @@
 		12F9357B2166520A0088E84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F935792166520A0088E84F /* Main.storyboard */; };
 		12F9357D2166520E0088E84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F9357C2166520E0088E84F /* Assets.xcassets */; };
 		12F935802166520E0088E84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F9357E2166520E0088E84F /* LaunchScreen.storyboard */; };
+		12F9358A21665A580088E84F /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9358921665A580088E84F /* Currencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		12F9357C2166520E0088E84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12F9357F2166520E0088E84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12F935812166520E0088E84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F9358921665A580088E84F /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				12F935732166520A0088E84F /* AppDelegate.swift */,
+				12F9358921665A580088E84F /* Currencies.swift */,
 				12F935752166520A0088E84F /* FirstViewController.swift */,
 				12F935772166520A0088E84F /* SecondViewController.swift */,
 				12F935792166520A0088E84F /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				12F935782166520A0088E84F /* SecondViewController.swift in Sources */,
 				12F935742166520A0088E84F /* AppDelegate.swift in Sources */,
+				12F9358A21665A580088E84F /* Currencies.swift in Sources */,
 				12F935762166520A0088E84F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
