@@ -35,6 +35,13 @@ class CurrenciesViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
 
+    func setupNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+    }
+    
     @IBAction func fetchJSONData(_ sender: Any) {
         //currencies.jsonCurrenciesFetch()
         tableView.reloadData()
@@ -47,6 +54,8 @@ class CurrenciesViewController: UIViewController, UITableViewDelegate, UITableVi
         //print(currencies.globalCurrencies)
         tableView.reloadData()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setupNavigationBar()
     }
 
 }

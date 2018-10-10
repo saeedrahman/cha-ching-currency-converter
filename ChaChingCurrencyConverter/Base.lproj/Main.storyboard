@@ -17,19 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELE-E0-6KL">
-                                <rect key="frame" x="74" y="516" width="266" height="57"/>
-                                <color key="backgroundColor" red="0.2393973291" green="0.67933554910000005" blue="0.86046557739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="pBl-tw-cOl"/>
-                                </constraints>
-                                <state key="normal" title="Fetch Currencies">
-                                    <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="fetchJSONData:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JKY-Dp-r37"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-qw-O7U">
                                 <rect key="frame" x="0.0" y="55" width="414" height="402"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,6 +51,19 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="Hor-rD-TTt"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELE-E0-6KL">
+                                <rect key="frame" x="74" y="516" width="266" height="57"/>
+                                <color key="backgroundColor" red="0.2393973291" green="0.67933554910000005" blue="0.86046557739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="pBl-tw-cOl"/>
+                                </constraints>
+                                <state key="normal" title="Fetch Currencies">
+                                    <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchJSONData:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JKY-Dp-r37"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,7 +78,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Currencies" largeTitleDisplayMode="always" id="VuS-Pn-5OA"/>
+                    <navigationItem key="navigationItem" title="Currencies" id="VuS-Pn-5OA"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="nIS-qw-O7U" id="FOM-Yq-ynA"/>
@@ -149,8 +149,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TKy-SX-N5i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Currencies" image="currencies" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vHm-UR-LKs">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vHm-UR-LKs">
+                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
