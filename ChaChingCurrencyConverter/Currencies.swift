@@ -27,15 +27,15 @@ class Currencies {
         let rates: [String:Double]
     }
     
-    // This function fetches the currency data in JSON format
+    /* This function fetches the currency data in JSON format. It was written with the
+     help of this video: https://youtu.be/YY3bTxgxWss */
     func jsonCurrenciesFetch() {
         
         // Set the base currency. You can find a list of currencies from the link below
         let base = "GBP"
         
         /* URL for the open currencies API. An alternative would be to use fixer.io with
-         a free (limited) API key. Interpolates the value of base into the String below. This
-         function was written with the help of this video: https://youtu.be/YY3bTxgxWss */
+         a free (limited) API key. Interpolates the value of base into the String below */
         let jsonUrlString = "https://api.exchangeratesapi.io/latest?base=\(base)"
         
         guard let url = URL(string: jsonUrlString) else { return }
@@ -56,6 +56,8 @@ class Currencies {
                     self.currencySymbols.append(key)
                     self.curencyRates.append(value)
                 }
+
+                print(self.currencySymbols)
                                 
             } catch let jsonErr {
                 print("Error serialising json:", jsonErr)

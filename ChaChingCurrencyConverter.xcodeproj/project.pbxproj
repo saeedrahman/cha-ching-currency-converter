@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12F935742166520A0088E84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F935732166520A0088E84F /* AppDelegate.swift */; };
-		12F935762166520A0088E84F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F935752166520A0088E84F /* FirstViewController.swift */; };
+		12F935762166520A0088E84F /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F935752166520A0088E84F /* CurrenciesViewController.swift */; };
 		12F935782166520A0088E84F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F935772166520A0088E84F /* SecondViewController.swift */; };
 		12F9357B2166520A0088E84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F935792166520A0088E84F /* Main.storyboard */; };
 		12F9357D2166520E0088E84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F9357C2166520E0088E84F /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		12F935702166520A0088E84F /* ChaChingCurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaChingCurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F935732166520A0088E84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12F935752166520A0088E84F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		12F935752166520A0088E84F /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		12F935772166520A0088E84F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		12F9357A2166520A0088E84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12F9357C2166520E0088E84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				12F935732166520A0088E84F /* AppDelegate.swift */,
 				12F9358921665A580088E84F /* Currencies.swift */,
-				12F935752166520A0088E84F /* FirstViewController.swift */,
+				12F935752166520A0088E84F /* CurrenciesViewController.swift */,
 				12F935772166520A0088E84F /* SecondViewController.swift */,
 				12F935792166520A0088E84F /* Main.storyboard */,
 				12F9357C2166520E0088E84F /* Assets.xcassets */,
@@ -144,7 +144,7 @@
 				12F935782166520A0088E84F /* SecondViewController.swift in Sources */,
 				12F935742166520A0088E84F /* AppDelegate.swift in Sources */,
 				12F9358A21665A580088E84F /* Currencies.swift in Sources */,
-				12F935762166520A0088E84F /* FirstViewController.swift in Sources */,
+				12F935762166520A0088E84F /* CurrenciesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cdnis.edu.hk.ChaChingCurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cdnis.edu.hk.ChaChingCurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
